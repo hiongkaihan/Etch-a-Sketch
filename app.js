@@ -18,9 +18,11 @@ normalButton.classList.add("bold");
 normalButton.onclick = () => setMode("normal");
 rainbowButton.onclick = () => setMode("rainbow");
 
+/*
 let mouseDown = false
 document.body.onmousedown = () => (mouseDown = true)
 document.body.onmouseup = () => (mouseDown = false)
+*/
 
 function makeGrid(size) {
 
@@ -31,13 +33,13 @@ function makeGrid(size) {
         const div = document.createElement("div");
         div.classList.add("square");
         div.addEventListener("mouseover", highlight);
-        div.addEventListener("mousedown", highlight);
+        //div.addEventListener("mousedown", highlight);
         grid.appendChild(div);
     }
 }
 
 function highlight(e) {
-    if (e.type === 'mouseover' && !mouseDown) return
+    //if (e.type === 'mouseover' && !mouseDown) return
 
     if (currentMode === "rainbow") {
         const randomR = Math.floor(Math.random() * 256)
