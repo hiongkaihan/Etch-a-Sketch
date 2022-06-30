@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <div class="header">
+        <div>Etch-A-Sketch</div>
+    </div>
+    <div class="buttons">
+        <div class="mode-buttons">
+            <button type="button" class="normal">Normal Mode</button>
+            <button type="button" class="rainbow">Rainbow Mode</button>
+        </div>
+        <div class="slider-buttons">
+            <div class="slider-value">30 x 30</div>
+            <input type="range" class="slider" name="rangeInput" min="1" max="100" value="30">
+        </div>
+        <button type="button" class="clear">Clear</button>
+    </div>
+    <div class="container">
+        <div class="grid"></div>    
+    </div>
+    <div class="footer">
+        <div>Copyright ©<script>document.write(new Date().getFullYear())</script> Hiong Kai Han</div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

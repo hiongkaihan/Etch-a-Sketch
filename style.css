@@ -1,0 +1,82 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.header {
+    font-size: 100px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 40px;
+}
+
+.slider-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mode-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.normal {
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.grid {
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 5px solid black;
+    border-radius: 5px;
+    height: 575px;
+    width: 575px;
+}
+
+.square {
+    background-color: white;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: rgb(60, 66, 87);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    display: inline-block;
+    min-height: 28px;
+    transition: background-color .24s,box-shadow .24s;
+}
+
+.button-active {
+    font-size: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
