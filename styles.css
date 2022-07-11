@@ -1,7 +1,6 @@
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0px;
-    height: 100%;
 }
 
 .header {
@@ -81,12 +80,5 @@ button {
 
 .footer {
     display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
